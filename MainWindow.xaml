@@ -1,0 +1,24 @@
+﻿<Window x:Class="abaevapppps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:abaevapppps"
+        mc:Ignorable="d"
+         Title="ОАО Импульс" Height="450" Width="800" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Azure">
+            <Image HorizontalAlignment="Left" Width="78" Margin="19,14,0,37" Source="Resourses\LOGOT.png"/>
+            <TextBlock FontSize="24" Margin="115,26,216,54">ОАО АОКБ Импульс</TextBlock>
+            <Button Name="BtnInfo" Margin="537,0,131,0" Background="Azure" BorderBrush="Azure" Click="BtnInfo_Click">Информация</Button>
+            <Button Name="BtnBack" Margin="668,0,0,0" Background="Azure" BorderBrush="Azure" Click="BtnBack_Click">НАЗАД</Button>
+        </Grid>
+        <Frame Grid.Row="1" Background="Beige" Name="FrmMain" NavigationUIVisibility="Hidden">
+
+        </Frame>
+    </Grid>
+</Window>
